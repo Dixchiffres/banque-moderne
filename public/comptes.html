@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comptes - Banque UBS</title>
+    <link rel="stylesheet" href="css/comptes.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        /* Styles pour la date et l'heure */
+        #date-time {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        #date-time p {
+            font-family: 'Arial', sans-serif;
+            color: #333;
+        }
+
+        #date-time #date {
+            font-size: 1.2em;
+            color: #333;
+            margin: 10px 0;
+        }
+
+        #date-time #time {
+            font-size: 1em; /* Taille plus petite pour l'heure */
+            color: #007BFF; /* Couleur stylée */
+            margin: 5px 0;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <h2>CONSULT</h2>
+            </div>
+            <ul class="menu">
+                <li><a href="messagerie.html">Messagerie</a></li>
+                <li><a href="virements.html">Virements</a></li>
+                <li><a href="epargner.html">Épargner</a></li>
+                <li><a href="emprunter.html">Emprunter</a></li>
+                <li><a href="parametre.html">Paramètres</a></li>
+            </ul>
+        </aside>
+
+        <main class="content">
+            <header>
+                <a href="index.html" class="home-btn">Accueil</a>
+                <div class="profile-container">
+                    <img src="images/avatar.png" alt="Photo de Profil" class="profile-photo">
+                    <div class="profile-info">
+                        <p>Richard SCHMID</p>
+                        <p>Nom de banque : UBS</p>
+                        <p>Numéro ONOFF : +33 7 80 96 50 87</p>
+                        <p>E-mail : Richard.schdt@gmail.com</p>
+                        <p>Profession : Négociant international</p>
+                        <p>Date de naissance : 31/12/1964</p>
+                        
+                        
+                        <!-- Date and Time Section -->
+                        <section id="date-time">
+                            <p id="date">Date actuelle :</p>
+                            <p id="time">Heure actuelle :</p>
+                        </section>
+                    </div>
+                </div>
+            </header>
+
+            <section class="billing-section">
+                <button class="toggle-btn" onclick="toggleSection('billing-details')">Détails du compte</button>
+                <div id="billing-details" class="billing-details">
+                    <div class="billing-card">
+                        <div class="current-plan">
+                            <p>Compte épargne</p>
+                            <h3>0,00 CHF</h3>
+                            <p>Entreprise Plus</p>
+                            <button class="change-plan-btn">Changer de plan</button>
+                        </div>
+                        <div class="next-payment">
+                            <p>Compte principal</p>
+                            <h3>392.671,09 CHF</h3>
+                            <p id="next-payment-date">le 15 mai 2020</p>
+                            <button class="manage-payments-btn">Cartes de paiements</button>
+                        </div>
+                    </div>
+                </div>
+
+                <button class="toggle-btn" onclick="toggleSection('payment-history')">Historique des paiements</button>
+                <div id="payment-history" class="payment-history">
+                    <div class="payment-item">
+                        <p><strong>65,00 CHF</strong> <span class="status pending">Echec</span></p>
+                        <p>Bénéficiaire : Gabriel Banks | 10 mai 2020</p>
+                    </div>
+                    <div class="payment-item completed">
+                        <p><strong>250,00 CHF</strong> <span class="status completed">Terminé</span></p>
+                        <p>Bénéficiaire : Claudia Welch | 10 avril 2020</p>
+                    </div>
+                    <!-- Ajouter d'autres éléments de paiement ici -->
+                </div>
+            </section>
+        </main>
+    </div>
+    <script src="js/comptes.js"></script>
+    <script src="js/time.js"></script>
+</body>
+</html>

@@ -1,0 +1,112 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f2f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.payment-container {
+    background-color: #fff;
+    padding: 20px 40px;
+    border-radius: 20px;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+}
+
+.payment-container h2 {
+    margin-bottom: 20px;
+    font-size: 1.5em;
+    color: #333;
+}
+
+.payment-container label {
+    font-size: 0.9em;
+    color: #555;
+    display: block;
+    margin-bottom: 8px;
+}
+
+.payment-container input[type="text"],
+.payment-container input[type="number"],
+.payment-container input[type="month"],
+.payment-container input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-sizing: border-box;
+    font-size: 1em;
+    color: #333;
+}
+
+.payment-container .save-card {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.payment-container .save-card input {
+    margin-right: 10px;
+}
+
+.payment-container button {
+    width: 100%;
+    padding: 15px;
+    background-color: #1a73e8;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+.payment-container button:hover {
+    background-color: #166adb;
+}
+
+.payment-container .order-list {
+    background-color: #f7f7f7;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.payment-container .order-list h3 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.payment-container .order-list .item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.payment-container .order-list .total {
+    font-weight: bold;
+    font-size: 1.2em;
+    margin-top: 10px;
+}
+
+.payment-container .payment-methods {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.payment-container .payment-methods img {
+    width: 50px;
+    height: auto;
+}
+
+.payment-container .security-info {
+    font-size: 0.8em;
+    color: #888;
+    text-align: center;
+    margin-top: 20px;
+}

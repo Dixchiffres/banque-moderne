@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accueil - Banque UBS</title>
+    <link rel="stylesheet" href="css/index.css">
+    <style>
+        /* Styles supplémentaires */
+        .logo img {
+            width: 150px; /* Redimensionner le logo */
+            height: auto;
+        }
+
+        .banner {
+            background-image: url('images/frontifymigrated-2080678868.png'); /* Nouvelle image de fond */
+            background-size: cover;
+            background-position: center;
+            padding: 100px 0;
+            color: white;
+            position: relative;
+            text-align: center;
+        }
+
+        .banner-content {
+            position: relative;
+            z-index: 1;
+        }
+
+        /* Ajout des cercles bleus */
+        .circles {
+            position: absolute;
+            top: 50px;
+            right: 0;
+            z-index: 0;
+        }
+
+        .circle {
+            border-radius: 50%;
+            background-color: rgba(0, 123, 255, 0.1);
+            position: absolute;
+        }
+
+        .circle.large {
+            width: 400px;
+            height: 400px;
+            top: 20px;
+            right: -100px;
+        }
+
+        .circle.small {
+            width: 200px;
+            height: 200px;
+            top: 200px;
+            right: 50px;
+        }
+
+        /* Section Online Banking */
+        .online-banking {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            width: 250px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            position: absolute;
+            left: 50px;
+            top: 50px;
+        }
+
+        .btn-secure-login {
+            display: block;
+            background-color: #007BFF;
+            color: white;
+            padding: 10px;
+            text-align: center;
+            border-radius: 5px;
+            text-decoration: none;
+            margin-top: 10px;
+        }
+
+        .btn-secure-login:hover {
+            background-color: #0056b3;
+        }
+
+        /* Date and Time Styles */
+        #date-time {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        #date-time p {
+            font-size: 1.2em;
+            font-family: 'Arial', sans-serif;
+            color: #333;
+        }
+
+        #date-time #date, #date-time #time {
+            margin: 10px 0;
+            font-weight: bold;
+            color: #007BFF;
+        }
+    </style>
+    <script src="js/time.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <!-- Logo -->
+            <div class="logo">
+                <a href="index.html">
+                    <img src="images/Logoubs.png" alt="Logo Banque UBS">
+                </a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="comptes.html">Comptes</a></li>
+                    <li><a href="login.html">Connexion</a></li>
+                    <li><a href="pourquoi-nous.html">Pourquoi nous</a></li>
+                </ul>
+            </nav>
+            <a href="login.html" class="btn-login">Connexion</a>
+        </div>
+    </header>
+
+    <main>
+        <!-- Banner Section with Background and Circles -->
+        <section class="banner">
+            <div class="banner-content">
+                <h2>Des experts en prêt hypothécaire</h2>
+                <p>Une équipe de confiance, un taux que vous allez adorer</p>
+                <a href="comptes.html" class="btn-banner">En savoir plus</a>
+            </div>
+
+            <!-- Cercles bleus pour le design -->
+            <div class="circles">
+                <div class="circle large"></div>
+                <div class="circle small"></div>
+            </div>
+
+            <!-- Section Online Banking -->
+            <div class="online-banking">
+                <h3>Online Banking</h3>
+                <a href="login.html" class="btn-secure-login">Secure Login</a>
+                <a href="set-up.html" class="btn-secure-login" style="background-color: #6c757d;">Set up in 1 Minute</a>
+                <a href="security.html">Security Center</a>
+            </div>
+        </section>
+
+        <!-- Date and Time Section -->
+        <section id="date-time">
+            <p id="date">Date actuelle :</p>
+            <p id="time">Heure actuelle :</p>
+        </section>
+
+        <!-- Features Section -->
+        <section class="features">
+            <div class="feature">
+                <h3>Comptes</h3>
+                <p>Des comptes adaptés à vos besoins.</p>
+                <a href="comptes.html" class="btn">En savoir plus</a>
+            </div>
+        </section>
+
+        <!-- Pourquoi Choisir -->
+        <section class="why-choose">
+            <h2>Pourquoi nous choisir ?</h2>
+            <p>Des services fiables, rapides et sécurisés.</p>
+            <a href="pourquoi-nous.html" class="btn">En savoir plus</a>
+        </section>
+
+        <!-- Footer -->
+        <footer>
+            <p>&copy; 2024 Banque UBS. Tous droits réservés.</p>
+        </footer>
+    </main>
+</body>
+</html>

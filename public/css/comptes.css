@@ -1,0 +1,189 @@
+/* Styles généraux */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.container {
+    display: flex;
+}
+
+.sidebar {
+    width: 250px;
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
+}
+
+.sidebar-header {
+    text-align: center;
+}
+
+.menu {
+    list-style: none;
+    padding: 0;
+}
+
+.menu li {
+    margin: 1rem 0;
+}
+
+.menu a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    padding: 0.5rem;
+}
+
+.menu a:hover {
+    background-color: #555;
+}
+
+.content {
+    flex: 1;
+    padding: 2rem;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+}
+
+.home-btn {
+    display: inline-block;
+    background-color: #333;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.home-btn:hover {
+    background-color: #555;
+    transition: background-color 0.3s;
+}
+
+.profile-container {
+    display: inline-block;
+    position: relative;
+    margin-left: 1rem;
+}
+
+.profile-photo {
+    width: 50px; /* Ajuste la largeur selon ton besoin */
+    height: 50px; /* Ajuste la hauteur selon ton besoin */
+    border-radius: 50%;
+    object-fit: cover; /* Assure que l'image est bien cadrée */
+    border: 2px solid #fff; /* Optionnel, pour un contour blanc */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* Ombre légère */
+}
+
+.profile-info {
+    display: none; /* Masqué par défaut */
+    position: absolute;
+    top: 60px; /* Positionné en dessous de la photo */
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #333;
+    color: #fff;
+    padding: 0.5rem;
+    border-radius: 5px;
+    font-size: 0.8rem;
+    white-space: nowrap;
+    z-index: 10; /* Assure que la bulle est au-dessus des autres éléments */
+}
+
+.profile-container:hover .profile-info {
+    display: block; /* Affiche la bulle lorsque la souris survole la photo */
+}
+
+/* Styles pour les sections */
+.billing-section, .payment-info {
+    margin-bottom: 2rem;
+}
+
+.billing-card {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+.current-plan, .next-payment {
+    background-color: #fff;
+    padding: 1rem;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    width: 48%;
+}
+
+.current-plan p, .next-payment p {
+    margin: 0;
+}
+
+.change-plan-btn, .manage-payments-btn, .buy-storage-btn {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.change-plan-btn:hover, .manage-payments-btn:hover, .buy-storage-btn:hover {
+    background-color: #555;
+    transition: background-color 0.3s;
+}
+
+.payment-history .payment-item {
+    background-color: #fff;
+    padding: 1rem;
+    margin-bottom: 0.5rem;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.payment-item.completed {
+    border-left: 5px solid green;
+}
+
+.payment-item .status {
+    font-weight: bold;
+}
+
+.payment-item .status.pending {
+    color: orange;
+}
+
+.payment-item .status.completed {
+    color: green;
+}
+
+.storage-bar {
+    background-color: #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+    height: 20px;
+    margin-bottom: 1rem;
+}
+
+.used-storage {
+    background-color: #4caf50;
+    height: 100%;
+    width: 0%; /* Ajuste le pourcentage selon l'utilisation */
+}
+/* Styles pour la date et l'heure */
+#date {
+    font-size: 1.2em;
+    color: #333;
+    margin: 20px 0;
+}
+#time {
+    font-size: 1.5em;
+    color: #333;
+    margin: 10px 0;
+}
