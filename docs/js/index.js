@@ -1,10 +1,13 @@
-.hero-content {
-    opacity: 0;
-    animation: fadeIn 2s forwards;
-}
+// Script pour le menu mobile
+document.addEventListener('DOMContentLoaded', function() {
+    const menuToggle = document.getElementById('menu-toggle');
+    const nav = document.getElementById('main-nav');
 
-@keyframes fadeIn {
-    to {
-        opacity: 1;
-    }
-}
+    menuToggle.addEventListener('click', function() {
+        if (nav.style.display === 'block') {
+            nav.style.display = 'none';
+        } else {
+            nav.style.display = 'block';
+        }
+    });
+});
